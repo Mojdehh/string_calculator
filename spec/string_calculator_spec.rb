@@ -9,15 +9,17 @@ describe StringCalculator do
       end
     end
 
-    context "given '4'" do
-      it "returns '4'" do
-        expect(StringCalculator.add("4")).to eq(4)
+    context "single number" do
+      context "given '4'" do
+        it "returns '4'" do
+          expect(StringCalculator.add("4")).to eq(4)
+        end
       end
-    end
 
-    context "given '10'" do
-      it "returns '10'" do
-        expect(StringCalculator.add("10")).to eq(10)
+      context "given '10'" do
+        it "returns '10'" do
+          expect(StringCalculator.add("10")).to eq(10)
+        end
       end
     end
 
